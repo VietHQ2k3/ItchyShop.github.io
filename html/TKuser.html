@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thống Kê Tài Khoản</title>
+    <link rel="stylesheet" href="../css/TKuser.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Thống Kê Tài Khoản</h1>
+        <div class="filters">
+            <label for="category">Chọn thời gian:</label>
+            <select id="category">
+                <option value="day">Theo Ngày</option>
+                <option value="month">Theo Tháng</option>
+                <option value="year">Theo Năm</option>
+            </select>
+
+            <button onclick="generateReport()">Tạo Báo Cáo</button>
+        </div>
+        <div id="report">
+            <!-- Báo cáo sẽ được hiển thị ở đây -->
+        </div>
+    </div>
+
+    <script src="../js/TKuser.js"></script>
+</body>
+</html>

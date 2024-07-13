@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="Chat-ngay">
+        <button id="toggle-chat-button" onclick="toggleChat()">Chat ngay</button>
+        <div class="chat-container" id="chat-container" style="display: none;">
+            <div class="chat-box" id="chat-box">
+                <!-- Tin nhắn sẽ xuất hiện ở đây -->
+            </div>
+            <div class="input-container">
+                <input type="text" id="message-input" placeholder="Nhập tin nhắn...">
+                <button onclick="sendMessage()">Gửi</button>
+            </div>
+        </div>    
+    </div>
+    <div class="head">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="img/bg-video.mp4" type="video/mp4">
+        </video>
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>ITCHY</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#" class="link" onclick="Home()">Home</a></li>
+                    <li><a href="#" class="link" onclick="Product()">Product</a></li>
+                    <li><a href="#" class="link" onclick="Blog()">Blog</a></li>
+                    <li><a href="#" class="link" onclick="Services()">Services</a></li>
+                    <li><a href="#" class="link" onclick="Manager()">Mananger</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="login1()">Login</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+    </div>
+
+    <div class="body2">
+        <div class="Sanphamut">
+            <ul>
+                <li><a>Sản phẩm sneaker </a>
+                    <div class="products">
+                        <div class="productut">
+                            <img src="img/giay1.jpg" alt="" class="product-img">
+                            <h2 class="product-title" id="product-title" data-name="SUNGLASSES">Kính râm</h2>
+                            <span class="product-price">25.000.000 VND</span>
+                        </div>
+                        <div class="productut">
+                            <img src="img/giay5.jpg" alt="" class="product-img">
+                            <h2 class="product-title" id="product-title" data-name="METAL BOTTLE">Bình nước kim loại Adidas</h2>
+                            <span class="product-price">1.500.000 VND</span>
+                        </div>
+                        <div class="productut">
+                            <img src="./img/Giay/Giay-1.png" alt="" class="product-img">
+                            <h2 class="product-title" id="product-title" data-name="BACKPACK">Ba lô thể thao Adidas</h2>
+                            <span class="product-price">5.500.000 VND</span>
+                        </div>
+                        <div class="productut">
+                            <img src="img/giay0.jpg" alt="" class="product-img">
+                            <h2 class="product-title" id="product-title" data-name="Nike Shoes">Nike Air Max 270</h2>
+                            <span class="product-price">5.000.000 VND</span>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <a>Sản phẩm bán chạy</a>
+                    <div class="products">
+                        <div class="productut">
+                            <img src="img/kinh1.jpg" alt="" class="product-img">
+                            <h2 class="product-title" id="product-title" data-name="SUNGLASSES">SUNGLASSES0</h2>
+                            <span class="product-price">25.000.000 VND</span>
+                        </div>
+                        <div class="productut">
+                            <img src="img/binh1.jpg" alt="" class="product-img">
+                            <h2 class="product-title" id="product-title" data-name="METAL BOTTLE">METAL BOTTLE0</h2>
+                            <span class="product-price">1.500.000 VND</span>
+                        </div>
+                        <div class="productut">
+                            <img src="img/cap1.jpg" alt="" class="product-img">
+                            <h2 class="product-title" id="product-title" data-name="BACKPACK">BACKPACK0</h2>
+                            <span class="product-price">5.500.000 VND</span>
+                        </div>
+                        <div class="productut">
+                            <img src="img/giay1.jpg" alt="" class="product-img">
+                            <h2 class="product-title" id="product-title" data-name="Nike Shoes">Nike Shoes0</h2>
+                            <span class="product-price">5.000.000 VND</span>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a>Sản phẩm yêu thích</a>
+                    <div class="products">
+                        <div class="productut">
+                            <img src="img/kinh2.jpg" alt="" class="product-img">
+                            <h2 class="product-title" id="product-title" data-name="SUNGLASSES">SUNGLASSES0</h2>
+                            <span class="product-price">25.000.000 VND</span>
+                        </div>
+                        <div class="productut">
+                            <img src="img/binh1.jpg" alt="" class="product-img">
+                            <h2 class="product-title" id="product-title" data-name="METAL BOTTLE">METAL BOTTLE0</h2>
+                            <span class="product-price">1.500.000 VND</span>
+                        </div>
+                        <div class="productut">
+                            <img src="img/cap1.jpg" alt="" class="product-img">
+                            <h2 class="product-title" id="product-title" data-name="BACKPACK">BACKPACK0</h2>
+                            <span class="product-price">5.500.000 VND</span>
+                        </div>
+                        <div class="productut">
+                            <img src="img/giay2.jpg" alt="" class="product-img">
+                            <h2 class="product-title" id="product-title" data-name="Nike Shoes">Nike Shoes0</h2>
+                            <span class="product-price">5.000.000 VND</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-menu-group">
+            <ul class="footer-menu-list">
+                    <div class="footer-menu-list-item">
+                        <p href="">
+                            VỀ CHÚNG TÔI
+                        </p>
+                        <ul class="submenu"></ul>
+                        <li><a href="">Câu chuyện thương hiệu</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="">Tuyển dụng</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="">Nhà cung cấp</a></li>
+                    </div>
+                    <div class="footer-menu-list-item">
+                        <p href="">
+                            CHÍNH SÁCH BÁN HÀNG
+                        </p>
+                        <ul class="submenu"></ul>
+                        <li><a class="item" href="">Chính sách đổi hàng</a></li>
+                        <li><a class="item" href="">Chính sách bảo hành</a></li>
+                        <li><a class="item" href="">Chính sách giao nhận</a></li>
+                        <li><a class="item" href="">Chính sách hội viên</a></li>
+                        <li><a class="item" href="">Chính sách bảo mật</a></li>
+                        <div class="footer-menu-list-item">
+                            <h1>ITCHY</h1>
+                        </div>
+                    </div>
+                    <div class="footer-menu-list-item">
+                        <p href="">
+                            TƯ VẤN
+                        </p>
+                        <ul class="submenu"></ul>
+                        <li><a class="item" href="">Tư vấn phong cách</a></li>
+                        <li><a class="item" href="">Tư vấn chọn size</a></li>
+                        <li><a class="item" href="">Hướng dẫn mua hàng</a></li>
+                        <li><a class="item" href="">Hỏi đáp</a></div></li>
+                    </div>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

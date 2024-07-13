@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">    <title>List product </title>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- styles  -->
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header>
+        <!-- NAV  -->
+        <div class="nav container">
+            <a href="#" class="logo" onclick="chuyenhome()">ITCHY</a>
+            <!-- Search -->
+            <div class="searchbar">
+                <input placeholder="Search..." id="searchBar" name="search"
+                type="text" onkeyup="search()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <!-- CART ICON  -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
+            <!-- CART  -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content">
+
+
+                </div>
+
+                <!-- TOTAL   -->
+                <div class="total">
+                    <div class="total-title">Tổng</div>
+                    <div class="total-price">0 VND</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <button type="button" class="btn-buy">Mua ngay</button>
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- SHOP SECTION  -->
+    <section class="shop container">
+        <h2 class="section-title">ITCHY Products</h2>
+        <!-- CONTENT  -->
+        <div class="shop-content" id="list">
+            <!-- BOX 1 Giày-->
+            <div class="product-box">
+                <img src="../img/giay0.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="Nike Shoes">Nike Shoes0</h2>
+                <span class="product-price">5.000.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/giay1.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="Nike Shoes">Nike Shoes1</h2>
+                <span class="product-price">5.000.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/giay2.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="Nike Shoes">Nike Shoes2</h2>
+                <span class="product-price">5.000.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/giay3.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="Nike Shoes">Nike Shoes3</h2>
+                <span class="product-price">5.000.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/giay4.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="Nike Shoes">Nike Shoes4</h2>
+                <span class="product-price">5.000.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/giay5.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="Nike Shoes">Nike Shoes5</h2>
+                <span class="product-price">5.000.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/Giay/Giay-1.png" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="Nike Shoes">Nike Shoes6</h2>
+                <span class="product-price">5.000.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 2 Cặp -->
+            <div class="product-box">
+                <img src="../img/cap0.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="BACKPACK">BACKPACK0</h2>
+                <span class="product-price">5.500.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/cap1.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="BACKPACK">BACKPACK1</h2>
+                <span class="product-price">5.500.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/cap2.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="BACKPACK">BACKPACK2</h2>
+                <span class="product-price">5.500.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/cap3.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="BACKPACK">BACKPACK3</h2>
+                <span class="product-price">5.500.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/cap4.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="BACKPACK">BACKPACK4</h2>
+                <span class="product-price">5.500.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/cap5.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="BACKPACK">BACKPACK5</h2>
+                <span class="product-price">5.500.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/cap6.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="BACKPACK">BACKPACK6</h2>
+                <span class="product-price">5.500.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 3 Bình nước-->
+            <div class="product-box">
+                <img src="../img/binh0.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="METAL BOTTLE">METAL BOTTLE0</h2>
+                <span class="product-price">1.500.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/binh1.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="METAL BOTTLE">METAL BOTTLE1</h2>
+                <span class="product-price">1.500.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/binh2.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="METAL BOTTLE">METAL BOTTLE2</h2>
+                <span class="product-price">1.500.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/binh3.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="METAL BOTTLE">METAL BOTTLE3</h2>
+                <span class="product-price">1.500.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/binh4.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="METAL BOTTLE">METAL BOTTLE4</h2>
+                <span class="product-price">1.500.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/binh5.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="METAL BOTTLE">METAL BOTTLE5</h2>
+                <span class="product-price">1.500.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/binh6.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="METAL BOTTLE">METAL BOTTLE6</h2>
+                <span class="product-price">1.500.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 Kính-->
+            <div class="product-box">
+                <img src="../img/kinh0.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="SUNGLASSES">SUNGLASSES0</h2>
+                <span class="product-price">25.000.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/kinh1.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="SUNGLASSES">SUNGLASSES1</h2>
+                <span class="product-price">25.000.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/kinh2.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="SUNGLASSES">SUNGLASSES2</h2>
+                <span class="product-price">25.000.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/kinh3.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="SUNGLASSES">SUNGLASSES3</h2>
+                <span class="product-price">25.000.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/kinh4.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="SUNGLASSES">SUNGLASSES4</h2>
+                <span class="product-price">25.000.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/kinh5.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="SUNGLASSES">SUNGLASSES5</h2>
+                <span class="product-price">25.000.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="../img/kinh6.jpg" alt="" class="product-img">
+                <h2 class="product-title" id="product-title" data-name="SUNGLASSES">SUNGLASSES6</h2>
+                <span class="product-price">25.000.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- link js  -->
+    <script src="../js/product.js"></script>
+</body>
+
+</html>

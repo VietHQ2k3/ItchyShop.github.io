@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Hàng Hóa</title>
+    <link rel="stylesheet" href="../css/managerProduct.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Quản Lý Hàng Hóa</h1>
+    </header>
+    <main>
+        <div class="product-form">
+            <h2>Thêm Sản Phẩm</h2>
+            <form id="productForm">
+                <input type="file" id="fileInput" accept="image/png, image/jpg, image/jpeg" enctype="multipart/form-data">
+                <input type="text" id="productName" placeholder="Tên Sản Phẩm" required>
+                <input type="number" id="productPrice" placeholder="Giá Sản Phẩm" required>
+                <input type="number" id="productQuantity" placeholder="Số Lượng" required>
+                <button type="submit">Thêm</button>
+            </form>
+        </div>
+        <div class="product-list">
+            <h2>Danh Sách Sản Phẩm</h2>
+            <ul id="productList">
+                <!-- Các sản phẩm sẽ được thêm động ở đây -->
+            </ul>
+        </div>
+
+        <div class="product-stats">
+            <h2>Thống Kê Sản Phẩm</h2>
+            <table id="productStats">
+                <thead>
+                    <tr>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Số Lượng Đã Bán</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Các hàng thống kê sẽ được thêm động ở đây -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="../js/managerProduct.js"></script>
+</body>
+
+</html>
